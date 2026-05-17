@@ -308,7 +308,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                             pubDate={formatDateToYYYYMMDD(entry.data.published)}
                             coverImage={posterCoverUrl}
                             url={Astro.url.href}
-                            siteTitle={siteConfig.title}
+                            siteTitle={siteConfig.navbar.title || siteConfig.title}
                             avatar={posterAvatarUrl}
                           />
                         )
@@ -396,7 +396,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                             pubDate={formatDateToYYYYMMDD(entry.data.published)}
                             coverImage={posterCoverUrl}
                             url={Astro.url.href}
-                            siteTitle={siteConfig.title}
+                            siteTitle={siteConfig.navbar.title || siteConfig.title}
                             avatar={posterAvatarUrl}
                           />
                         )
